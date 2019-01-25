@@ -4,9 +4,11 @@
 
 What is method?
 
-C - A function is a group of statements that together perform a task
-Java - A method is a collection of statements that are grouped together to perform an operation
-JavaScript - A function is a group of reusable code which can be called anywhere in your program
+>C - A function is a group of statements that together perform a task
+
+>Java - A method is a collection of statements that are grouped together to perform an operation
+
+>JavaScript - A function is a group of reusable code which can be called anywhere in your program
 
 출처 - https://www.tutorialspoint.com
 
@@ -37,10 +39,22 @@ JavaScript - A function is a group of reusable code which can be called anywhere
       - 여러가지를 하고 있는 셈
       - 플레그 인수에 따라 다른일을 하는게 아니라면? ex) JPA repository , 중복을 피하기 위해서..
   - 이항 함수
-    - 가능하다면 단항 함수로 변경 writeField(outputStream, name)
-      1. 메서드를 인자 클래스의 구성원 메서드로 변경 outputStream.writeField(name)
-      2. 인자를 메서드가 정의된 클래스의 구성 변수로 변경 writeField(name) { this.outputStream } 
-      3. 새로운 클래스 생성자로 인수중의 하나를 주입받도록 변경 new FieldWriter(outputStream).write(name)
+    - 가능하다면 단항 함수로 변경 
+    ```Java 
+      writeField(outputStream, name)
+    ```
+      1. 메서드를 인자 클래스의 구성원 메서드로 변경 
+      ```Java
+        outputStream.writeField(name)      
+      ```
+      2. 인자를 메서드가 정의된 클래스의 구성 변수로 변경 
+      ```Java
+        writeField(name) { this.outputStream } 
+      ```
+      3. 새로운 클래스 생성자로 인수중의 하나를 주입받도록 변경 
+      ```Java
+        new FieldWriter(outputStream).write(name)
+      ```
 
   - 삼항 함수
   
@@ -48,9 +62,14 @@ JavaScript - A function is a group of reusable code which can be called anywhere
     - Builder 패턴
   
   - 인수 목록
-    - 인수 개수가 가변적인 함수도 필요하다. log.info("orderId : {}, address : {}, phoneNumber : {}", orderId, address, phoneNumber)
-    - 실제로는 이항 함수     public void info(String format, Object... arguments);
-    
+    - 인수 개수가 가변적인 함수도 필요하다.
+      ```Java 
+       log.info("orderId : {}, address : {}, phoneNumber : {}", orderId, address, phoneNumber)
+      ```
+    - 실제로는 이항 함수     
+       ```Java 
+        public void info(String format, Object... arguments);
+       ```
   - 동사와 키워드
     - 단항 함수는 함수와 인수가 동사/명사 쌍을 이뤄야 한다 writeField(name)
     - 함수 이름에 인수 이름을 넣는다 assertEquals -> assertExpectedEqualsActual
