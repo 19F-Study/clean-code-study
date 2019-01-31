@@ -65,8 +65,7 @@ TDD 법칙 세 가지
 
 <br>
 
-ref
+**ref**
 - TDD, https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C
 - BUILD-OPERATE-CHECK Pattern, https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests/
 - image, https://s3.amazonaws.com/ckl-website-static/wp-content/uploads/2017/03/TDD-e1492712699769-300x300.png
-- 
