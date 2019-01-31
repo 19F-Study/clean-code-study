@@ -9,7 +9,10 @@
 ![img](https://s3.amazonaws.com/ckl-website-static/wp-content/uploads/2017/03/TDD-e1492712699769-300x300.png)
 
 > 테스트 주도 개발(Test-driven development TDD)은 애자일 소프트웨어 개발 방법론중의 하나로서, 빠른 피드백 및 협력에 도움을 주는 대표적인 개발 방법론이며, 매우 짧은 개발 사이클을 반복하는게 특징이다.
+
 > 개발자는 초기적 결함을 점검할 수 있는 테스트 케이스를 작성한다. 그런 후에, 그 케이스를 통과하기 위한 최소한의 양의 코드를 생성한다. 그리고 마지막으로 그 새 코드를 표준에 맞도록 (즉, 행동은 변하지 않는 선에서 ) 리팩토링한다. - [wiki page](https://ko.wikipedia.org/wiki/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A3%BC%EB%8F%84_%EA%B0%9C%EB%B0%9C)
+
+<br>
 
 TDD 법칙 세 가지
 1. 실패하는 단위 테스트를 작성할 때까지 실제 코드를 작성하지 않는다.
