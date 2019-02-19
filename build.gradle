@@ -8,4 +8,6 @@ repositories {
 
 dependencies {
 	compile group: 'org.jsoup', name: 'jsoup', version: '1.8.3'
+
+	compile group: 'jfree', name: 'jcommon', version: '1.0.14'
 }
